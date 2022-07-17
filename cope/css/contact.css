@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@100;300;900&family=Monofett&family=Montserrat:ital,wght@0,900;1,400&family=Poppins:ital,wght@0,900;1,900&display=swap');
+:root{
+  --dark-mode: rgb(42, 42, 42);
+  --purple: #5e3bbd;
+  --red: #7b0d0d;
+}
+*::before,
+*:after{
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+}
+body , html , header{
+  overflow-x: hidden;
+}
+*{
+  padding: 0; margin: 0;
+}
+.cover
+{
+  display: inline-block;
+}
+
+header{
+  background-color: black;
+  overflow-x: hidden;
+}
+#header-h1{
+  background-color: black;
+  color: white;
+  font-size: 27px;
+   padding: 2vw 1.5vw 2vw 2vw;  
+   margin-block-end: 0;
+   width: 0%;
+}
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Montserrat','Inter',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 1.5vw;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 200;
+  transition: 300ms ease-out;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  transition: 250ms ease;
+  background-color: var(--purple);
+  color: var(--dark-mode);
+  font-weight: 800;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #462a91;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+body{
+  background: url(/public/assets/psa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: drgb 50s infinite linear;
+}
+.main
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.main > .hotspot , .sidespot{
+  display: inline;
+}
+.hotspot{
+  background-color: var(--purple);
+  color: white;
+  padding: 2em;
+  width: max-content;
+  margin: 2em -1em;
+  border-radius: 2em;
+  box-shadow: 2px 5px 12px 2px rgba(0, 0, 0, 0.692);
+  transition: 250ms ease-out;
+}
+.hotspot:hover{
+  background-color: #6d2498;
+  transition: 250ms ease-out;
+}
+#h-h1{
+  font-weight: 900;
+  font-family: 'Poppins';
+  font-size: 5em;
+  transition: 250ms ease;
+}
+#h-h1:hover{
+  -webkit-text-stroke: 1px white;
+  color: #6d2498;
+  letter-spacing: .1em;
+  font-size: 6.5em;
+  transition: 250ms ease;
+}
+#h-h2{
+  font-family: 'Inter';
+  font-size: x-large;
+  text-align: left;
+  letter-spacing: .5em;
+
+  color:aliceblue
+}
+.hotspot > form > input , textarea {
+  padding: .5em;
+  padding-bottom: 0;
+  font-family:  'Inter','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 1em 0;
+  background: none;
+  border: 0 ;
+  border-bottom: 2px solid ;
+  font-weight: 500;
+  outline: none;
+  transition: 250ms ease;
+  margin-bottom: 2em;
+  width: 90%;
+
+}
+#p-email{
+  font-family: 'Inter',default;
+  font-weight: 800;
+  letter-spacing: .1em;
+  font-size: 1em;
+}
+input::placeholder , textarea::placeholder{
+  color: aliceblue;
+}
+.hotspot textarea:focus {
+        border-bottom-color: greenyellow;
+        transition: 350ms ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.input-h:focus{
+  border-bottom-color:  greenyellow;
+  transition: 350ms ease;
+}
+.hotspot  textarea:hover {
+ 
+  border-bottom-color: rgb(65, 160, 255);
+  transition: 350ms ease;
+  background-color: #7929a7;
+  
+}
+
+.input-h:hover{
+  border-bottom-color: rgb(65, 160, 255);
+  transition: 350ms ease;
+  background-color: #7929a7;
+}
+#snd-btn{
+   background: #462a91 ;
+  color: white;
+  padding: .8em 2.8em;
+  border-radius: 1em ;
+  border: none;
+  font-family: 'Inter';
+  font-weight: 800;
+  box-shadow: 2px 2px 9px 8px #3b1d8d5d; 
+  transition: 360ms ease-in;
+  
+}
+#snd-btn:hover{
+  background-color: white;
+  color: #462a91;
+  transition: 370ms ease-out;
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+#gif-s{
+  animation: rgb 6s infinite linear;
+}
+.heada{
+    margin: 4em 0;
+    margin-bottom: 0;
+    padding: 2em;
+}
+.queries{
+  background-color: rgb(45, 153, 196);
+  padding: .5em;
+  border-radius: 2em;
+  margin: 1em;
+}
+.child-query{
+  background-color: rgb(221, 221, 221);
+  box-shadow: 1px 1.5px 0px 2px #121212ac;
+  font-family: 'Inter',default;
+  border: none;
+  border-radius: 1em;
+  padding: .5em;
+  margin: .7em;
+  transition: 250ms ease;
+}
+.child-query:hover{
+  background-color: #121212;
+  color: rgb(221, 221, 221);
+  box-shadow: 1px 1.5px 0px 2px rgb(131, 255, 156);
+  transition: 250ms ease;
+  font-weight: 700;
+}
+#s-p{
+  font-family: 'Inter';
+  font-weight: 400;
+  color: rgb(108, 125, 238);
+}
+#s-h1{
+  font-family: 'Inter' default;
+  font-weight: 900;
+  font-size: 5em;
+  color: #121212;
+}
+@keyframes rgb {
+   10%{
+    filter: hue-rotate(50deg);
+   }
+   25%{
+    filter: hue-rotate(75deg);
+   }
+   35%{
+    filter: hue-rotate(100deg);
+   }
+   50%{
+    filter: hue-rotate(115deg);
+   }
+   75%{
+    filter: hue-rotate(130deg);
+   }
+   90%{filter: hue-rotate(155deg);}
+   100%{
+    filter: hue-rotate(180deg);
+   }
+}
+@keyframes drgb{
+  10%{
+    filter: hue-rotate(10deg);
+  }
+  100%{
+    filter: hue-rotate(1000deg);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hotspot{
+    width: 90%;
+    font-size: 2em;
+  }
+  input::placeholder ,textarea::placeholder{
+    font-size: .8567em;
+  }
+  #h-h1{
+    font-size: 2.5em;
+  }
+  #h-h4{
+     font-size: 1.2em;
+     letter-spacing: .1em;
+  }
+  .sidespot{
+    font-size: 3em;
+  }
+  #s-h1{
+    font-size: 2em;
+  }
+  #s-h4{
+    font-size: .9em;
+  }
+  #p-email{
+    font-size: .5em;
+  }
+  .queries{
+    
+    margin: .5em 2em;
+    padding: .2em;
+  }
+  #s-p{
+    font-size: .9em;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .hotspot{
+    width: 90%;
+    font-size: 2em;
+  }
+  input::placeholder ,textarea::placeholder{
+    font-size: .955544444444em;
+  }
+  #h-h1{
+    font-size: 2.5em;
+  }
+  .titles-inp{
+    font-size: 1.5em;
+  }
+  #h-h4{
+     font-size: 1.2em;
+     letter-spacing: .1em;
+  }
+  .sidespot{
+    font-size: 3em;
+  }
+  #s-h1{
+    font-size: 2em;
+  }
+  #s-h4{
+    font-size: .9em;
+  }
+  #p-email{
+    font-size: .7em;
+  }
+  .queries{
+    
+    margin: .5em 2em;
+    padding: .2em;
+  }
+  #s-p{
+    font-size: .9em;
+  }
+  #header-h1{
+    font-size: 37px;
+  }
+  .topnav a {
+    font-size: 27px;
+  }
+}
+
+#yt:hover{
+  color: red;
+}
+#blues1:hover{
+color:#006cd0;
+}
+#blues2:hover{
+color:#006cd0;
+}
+footer{
+text-align: center;
+background-color: #121212;
+color: white;
+text-shadow: 2px 2px var(--purple);
+font-family: 'Poppins';
+}
+.terms{
+font-family: monospace,sans-serif;
+filter: hue-rotate(15deg);
+text-shadow: none;
+margin-bottom: 0;
+}
+#copy{
+text-shadow: none;
+color: var(--purple);
+}
+
+.socials{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+margin: 0 10px;
+}
+
+.socials a{
+text-decoration: none;
+color: #fff;
+border: 1.1px solid white;
+padding: 5px;
+border-radius: 50%;
+}
+
+.socials a i{
+font-size: 1.1rem;
+width: 20px;
+transition: color .4s ease;
+}
+
+.socials a:hover i{
+color:var(--purple);
+}
